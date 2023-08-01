@@ -44,10 +44,11 @@ clear
 echo -e "${YELLOW}   ╔ ——————————————————————————————————— ╗${NC}"
 echo -e "${ORANGE}           MENU Lock/Unlock${NC}"
 echo -e "${YELLOW}   ╚ ——————————————————————————————————— ╝${NC}"
-echo -e "${GREEN}     1. Lock user    "
-echo -e "${GREEN}     2. Unlock User      "
+echo -e "${GREEN}       1. Lock user    "
+echo -e "${GREEN}       2. Unlock User      "
 echo -e "${YELLOW}   ╚ ——————————————————————————————————— ╝${NC}"
-echo -e "     Press x or [ Ctrl+C ] • To-Exit"
+echo -e ""
+read -p " Select menu : " opt
 echo -e ""
 case $opt in
 1) clear ; user-lock ; exit ;;

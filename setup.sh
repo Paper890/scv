@@ -147,35 +147,27 @@ clear
 	echo -e "${BGreen}Done!${NC}"
     sleep 2
 clear
-echo -e "\e[33m✦─────────────────────────────✦\033[0m"
-echo -e "$green      Install SSH / WS               $NC"
-echo -e "\e[33m✦─────────────────────────────✦\033[0m"
+echo -e "     Install SSH / WS               $"
 sleep 2
 clear
 wget https://raw.githubusercontent.com/Paper890/PAPER-TUNNEL-V2/main/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 clear
-echo -e "\e[33m✦─────────────────────────────✦\033[0m"
-echo -e "$green      Install BACKUP               $NC"
-echo -e "\e[33m✦─────────────────────────────✦\033[0m"
+echo -e "    Install BACKUP               "
 sleep 2
 clear
 wget https://raw.githubusercontent.com/Paper890/PAPER-TUNNEL-V2/main/backup/set-br.sh &&  chmod +x set-br.sh && ./set-br.sh
 clear
 clear
-echo -e "\e[33m✦─────────────────────────────✦\033[0m"
-echo -e "$green          Install XRAY              $NC"
-echo -e "\e[33m✦─────────────────────────────✦\033[0m"
+echo -e "          Install XRAY              "
 sleep 2
 clear
 wget https://raw.githubusercontent.com/Paper890/PAPER-TUNNEL-V2/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
 wget https://raw.githubusercontent.com/Paper890/PAPER-TUNNEL-V2/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 clear
-echo -e "\e[33m✦─────────────────────────────✦\033[0m"
-echo -e "$green          Install SLOWDNS              $NC"
-echo -e "\e[33m✦─────────────────────────────✦\033[0m"
+echo -e "          Install SLOWDNS              "
 sleep 2
 clear
-wget -q -O slow.sh https://raw.githubusercontent.com/Andyyuda/xray-ssh/main/slow.sh && chmod +x slow.sh && ./slow.sh
+wget -q -O slow.sh https://raw.githubusercontent.com/PAPER-TUNNEL-V2/main/ssh/slow.sh && chmod +x slow.sh && ./slow.sh
 clear
 cat> /root/.profile << END
 if [ "$BASH" ]; then

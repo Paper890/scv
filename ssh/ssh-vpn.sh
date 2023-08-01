@@ -249,7 +249,7 @@ echo "Banner /etc/issue.net" >> /etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
 
 #install bbr dan optimasi kernel
-wget https://raw.githubusercontent.com/artanodrop/v4/main/ssh/bbr.sh && chmod +x bbr.sh && ./bbr.sh
+wget https://raw.githubusercontent.com/PAPER-TUNNEL-V2/main/ssh/bbr.sh && chmod +x bbr.sh && ./bbr.sh
 
 # blockir torrent
 iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
@@ -323,8 +323,8 @@ wget -O restore "https://raw.githubusercontent.com/Paper890/PAPER-TUNNEL-V2/main
 wget -O jam "https://raw.githubusercontent.com/Paper890/PAPER-TUNNEL-V2/main/jam.sh"
 
 wget -q -O /usr/bin/xolpanel "https://raw.githubusercontent.com/Andyyuda/xolpanel/main/xolpanel.sh"
-wget -q -O /usr/bin/lock "https://raw.githubusercontent.com/Sandhj/v5/main/user-lock.sh"
-wget -q -O /usr/bin/unlock "https://raw.githubusercontent.com/Sandhj/v5/main/user-unlock.sh"
+wget -q -O /usr/bin/lock "https://raw.githubusercontent.com/Paper890/PAPER-TUNNEL-V2/main/user-lock.sh"
+wget -q -O /usr/bin/unlock "https://raw.githubusercontent.com/Paper890/PAPER-TUNNEL-V2/main/user-unlock.sh"
 wget -q -O /usr/bin/update "https://raw.githubusercontent.com/Paper890/PAPER-TUNNEL-V2/main/update.sh"
 wget -q -O /usr/bin/usernew "https://raw.githubusercontent.com/Paper890/PAPER-TUNNEL-V2/main/menu/menu-lock.sh"
 

@@ -17,10 +17,10 @@ clear
 echo -e "${YELLOW}   ╔ ——————————————————————————————————— ╗${NC}"
 echo -e "${ORANGE}           MENU DOMAIN${NC}"
 echo -e "${YELLOW}   ╚ ——————————————————————————————————— ╝${NC}"
-echo -e "${GREEN}    1. Change Domain     "
-echo -e "${GREEN}    2. Renew Cert Domain "
+echo -e "${GREEN}      1. Change Domain     "
+echo -e "${GREEN}      2. Renew Cert Domain "
 echo -e "${YELLOW}   ╚ ——————————————————————————————————— ╝${NC}"
-echo -e   "   Press x or [ Ctrl+C ] • To-Exit"
+echo -e ""
 echo -e ""
 read -p " Select menu : " opt
 echo -e ""
