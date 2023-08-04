@@ -1,29 +1,40 @@
 clear
 # color declare
-BLACK='\033[0;30m'
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[0;33m'
-BLUE='\033[0;34m'
-MAGENTA='\033[0;35m'
-CYAN='\033[0;36m'
-WHITE='\033[0;37m'
-ORANGE='\033[0;91m'  # Use '\033[0;91m' for orange color
-NC='\033[0m'
+BIBlack='\033[1;90m'      # Black
+BIRed='\033[1;91m'        # Red
+BIGreen='\033[1;92m'      # Green
+BIYellow='\033[1;93m'     # Yellow
+BIBlue='\033[1;94m'       # Blue
+BIPurple='\033[1;95m'     # Purple
+BICyan='\033[1;96m'       # Cyan
+BIWhite='\033[1;97m'      # White
+UWhite='\033[4;37m'       # White
+On_IPurple='\033[0;105m'  #
+On_IRed='\033[0;101m'
+IBlack='\033[0;90m'       # Black
+IRed='\033[0;91m'         # Red
+IGreen='\033[0;92m'       # Green
+IYellow='\033[0;93m'      # Yellow
+IBlue='\033[0;94m'        # Blue
+IPurple='\033[0;95m'      # Purple
+ICyan='\033[0;96m'        # Cyan
+IWhite='\033[0;97m'       # White
+NC='\e[0m'
 
 
-echo -e "${YELLOW}   ╔ ——————————————————————————————————— ╗${NC}"
-echo -e "${ORANGE}           MENU BACKUP${NC}"
-echo -e "${YELLOW}   ╚ ——————————————————————————————————— ╝${NC}"
-echo -e "${GREEN}    1).Backup"
-echo -e "${GREEN}    2).Restore"
-echo -e "${GREEN}    3).strt"
-echo -e "${GREEN}    4).limit speed"
-echo -e "${GREEN}    5).autobackup"
-echo -e "${YELLOW}   ╚ ——————————————————————————————————— ╝${NC}"
+echo -e "${BIYellow}   ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓${NC}"
+echo -e "${BIYellow}   ┃     MENU BACKUP${NC}"
+echo -e "${BIYellow}   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
+echo -e "${BIYellow}   ┃${BIGreen}1  Backup"
+echo -e "${BIYellow}   ┃${BIGreen}2. Restore"
+echo -e "${BIYellow}   ┃${BIGreen}3. strt"
+echo -e "${BIYellow}   ┃${BIGreen}4. limit speed"
+echo -e "${BIYellow}   ┃${BIGreen}5. autobackup"
+echo -e "${BIYellow}   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
 echo
-echo -e "${BlueCyan}"
+echo -e "${BIYellow}"
 read -p    "Pilih Nomor └╼>>>" bro
+
 
 if [ $bro = 1 ] || [ $bro = 1 ]
 then

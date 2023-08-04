@@ -2,32 +2,43 @@
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
 # color declare
-BLACK='\033[0;30m'
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[0;33m'
-BLUE='\033[0;34m'
-MAGENTA='\033[0;35m'
-CYAN='\033[0;36m'
-WHITE='\033[0;37m'
-ORANGE='\033[0;91m'  # Use '\033[0;91m' for orange color
-NC='\033[0m'
+BIBlack='\033[1;90m'      # Black
+BIRed='\033[1;91m'        # Red
+BIGreen='\033[1;92m'      # Green
+BIYellow='\033[1;93m'     # Yellow
+BIBlue='\033[1;94m'       # Blue
+BIPurple='\033[1;95m'     # Purple
+BICyan='\033[1;96m'       # Cyan
+BIWhite='\033[1;97m'      # White
+UWhite='\033[4;37m'       # White
+On_IPurple='\033[0;105m'  #
+On_IRed='\033[0;101m'
+IBlack='\033[0;90m'       # Black
+IRed='\033[0;91m'         # Red
+IGreen='\033[0;92m'       # Green
+IYellow='\033[0;93m'      # Yellow
+IBlue='\033[0;94m'        # Blue
+IPurple='\033[0;95m'      # Purple
+ICyan='\033[0;96m'        # Cyan
+IWhite='\033[0;97m'       # White
+NC='\e[0m'
 
 clear 
-echo -e "${YELLOW}╔ ——————————————————————————————————— ╗"
-echo -e "${ORANGE}      • BANDWITH MONITOR •         "
-echo -e "${YELLOW}╚ ——————————————————————————————————— ╝"
-echo -e "${GREEN}   1. Lihat Total Bandwith Tersisa"
-echo -e "${GREEN}   2. Tabel Penggunaan Setiap 5 Menit"
-echo -e "${GREEN}   3. Tabel Penggunaan Setiap Jam"
-echo -e "${GREEN}   4. Tabel Penggunaan Setiap Hari"
-echo -e "${GREEN}   5. Tabel Penggunaan Setiap Bulan"
-echo -e "${GREEN}   6. Tabel Penggunaan Setiap Tahun"
-echo -e "${GREEN}   7. Tabel Penggunaan Tertinggi"
-echo -e "${GREEN}   8. Statistik Penggunaan Setiap Jam"
-echo -e "${GREEN}   9. Lihat Penggunaan Aktif Saat Ini"
-echo -e "${GREEN}  10. Lihat Trafik Penggunaan Aktif Saat Ini [5s]"
-echo -e "${YELLOW}╚ ——————————————————————————————————— ╝"
+echo -e "${BIYellow}   ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓${NC}"
+echo -e "${BIYellow}   ┃       ${GREEN}MENU AUTO-BACKUP${NC}"
+echo -e "${BIYellow}   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
+echo -e "${BIYellow}   ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
+echo -e "${BIYellow}   ┃${IGreen} 1. Total Bandwith Tersisa${NC}"
+echo -e "${BIYellow}   ┃${IGreen} 2. Setiap 5 Menit${NC}"
+echo -e "${BIYellow}   ┃${IGreen} 3. Setiap Jam${NC}"
+echo -e "${BIYellow}   ┃${IGreen} 4. Setiap Hari${NC}"
+echo -e "${BIYellow}   ┃${IGreen} 5. Setiap Bulan${NC}"
+echo -e "${BIYellow}   ┃${IGreen} 6. Setiap Tahun${NC}"
+echo -e "${BIYellow}   ┃${IGreen} 7. Tertinggi${NC}"
+echo -e "${BIYellow}   ┃${IGreen} 8. Setiap Jam${NC}"
+echo -e "${BIYellow}   ┃${IGreen} 9. Penggunaan Aktif Saat Ini${NC}"
+echo -e "${BIYellow}   ┃${IGreen} 10.Trafik Penggunaan Aktif Saat Ini [5s]${NC}"
+echo -e "${BIYellow}   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
 echo -e "" 
 read -p " Select menu : " opt
 echo -e ""

@@ -41,12 +41,13 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
 
 clear
-echo -e "${YELLOW}   ╔ ——————————————————————————————————— ╗${NC}"
-echo -e "${ORANGE}           MENU Lock/Unlock${NC}"
-echo -e "${YELLOW}   ╚ ——————————————————————————————————— ╝${NC}"
-echo -e "${GREEN}       1. Lock user    "
-echo -e "${GREEN}       2. Unlock User      "
-echo -e "${YELLOW}   ╚ ——————————————————————————————————— ╝${NC}"
+echo -e "${BIYellow}   ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓${NC}"
+echo -e "${BIYellow}   ┃       ${BIYellow}MENU Lock/Unlock${NC}"
+echo -e "${BIYellow}   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
+echo -e "${BIYellow}   ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
+echo -e "${BIYellow}   ┃${IGreen} 1. Lock user    ${NC}"
+echo -e "${BIYellow}   ┃${IGreen} 2. Unlock User      ${NC}"
+echo -e "${BIYellow}   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
 echo -e ""
 read -p " Select menu : " opt
 echo -e ""

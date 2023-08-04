@@ -305,6 +305,8 @@ wget -O about "https://raw.githubusercontent.com/Paper890/PAPER-TUNNEL-V2/main/m
 wget -O auto-reboot "https://raw.githubusercontent.com/Paper890/PAPER-TUNNEL-V2/main/menu/auto-reboot.sh"
 wget -O restart "https://raw.githubusercontent.com/Paper890/PAPER-TUNNEL-V2/main/menu/restart.sh"
 wget -O bw "https://raw.githubusercontent.com/Paper890/PAPER-TUNNEL-V2/main/menu/bw.sh"
+wget -O menu-lock "https://raw.githubusercontent.com/Paper890/PAPER-TUNNEL-V2/main/menu/menu-lock.sh"
+
 
 # change port
 wget -O port-ssl "https://raw.githubusercontent.com/Paper890/PAPER-TUNNEL-V2/main/port/port-ssl.sh"
@@ -326,7 +328,6 @@ wget -q -O /usr/bin/xolpanel "https://raw.githubusercontent.com/Andyyuda/xolpane
 wget -q -O /usr/bin/lock "https://raw.githubusercontent.com/Paper890/PAPER-TUNNEL-V2/main/user-lock.sh"
 wget -q -O /usr/bin/unlock "https://raw.githubusercontent.com/Paper890/PAPER-TUNNEL-V2/main/user-unlock.sh"
 wget -q -O /usr/bin/update "https://raw.githubusercontent.com/Paper890/PAPER-TUNNEL-V2/main/update.sh"
-wget -q -O /usr/bin/usernew "https://raw.githubusercontent.com/Paper890/PAPER-TUNNEL-V2/main/menu/menu-lock.sh"
 
 chmod +x menu
 chmod +x menu-trial
@@ -360,6 +361,7 @@ chmod +x about
 chmod +x auto-reboot
 chmod +x restart
 chmod +x bw
+chmod +x menu-lock
 
 chmod +x port-ssl
 chmod +x port-ovpn
@@ -376,7 +378,6 @@ chmod +x /usr/bin/xolpanel
 chmod +x /usr/bin/lock
 chmod +x /usr/bin/unlock
 chmod +x /usr/bin/update
-chmod +x /usr/bin/menu-lock.sh
 cd
 
 

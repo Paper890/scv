@@ -10,7 +10,7 @@ if [ "$(systemd-detect-virt)" == "openvz" ]; then
 fi
 echo ""
 version=$(cat /home/ver)
-ver=$( curl https://raw.githubusercontent.com/${GitUser}/v4/main/version )
+ver=$( curl https://raw.githubusercontent.com/${GitUser}/PAPER-TUNNEL-V2/main/version )
 clear
 # LINE COLOUR
 line=$(cat /etc/line)
@@ -28,7 +28,7 @@ Info1="${Green_font_prefix}($version)${Font_color_suffix}"
 Info2="${Green_font_prefix}(LATEST VERSION)${Font_color_suffix}"
 Error="Version ${Green_font_prefix}[$ver]${Font_color_suffix} available${Red_font_prefix}[Please Update]${Font_color_suffix}"
 version=$(cat /home/ver)
-new_version=$( curl https://raw.githubusercontent.com/${GitUser}/v4/main/newversion | grep $version )
+new_version=$( curl https://raw.githubusercontent.com/${GitUser}/PAPER-TUNNEL-V2/main/newversion | grep $version )
 #Status Version
 if [ $version = $new_version ]; then
 sts="${Info2}"
@@ -55,7 +55,7 @@ read -p "PPlease Choose 1 or x : " option2
 case $option2 in
 1)
 version=$(cat /home/ver)
-new_version=$( curl https://raw.githubusercontent.com/${GitUser}/v4/main/newversion | grep $version )
+new_version=$( curl https://raw.githubusercontent.com/${GitUser}/PAPER-TUNNEL-V2/main/newversion | grep $version )
 if [ $version = $new_version ]; then
 clear
 echo ""
@@ -83,7 +83,7 @@ sleep 1
 echo ""
 # UPDATE RUN-UPDATE
 cd /usr/bin
-wget -O run-update "https://raw.githubusercontent.com/${GitUser}/v4/main/update.sh"
+wget -O run-update "https://raw.githubusercontent.com/${GitUser}/PAPER-TUNNEL-V2/main/update.sh"
 chmod +x run-update
 # RUN UPDATE
 echo ""
@@ -120,7 +120,7 @@ wget -q -O /usr/bin/add4 "https://raw.githubusercontent.com/Andyyuda/permission/
 wget -q -O /usr/bin/menu-backup "https://raw.githubusercontent.com/Paper890/PAPER-TUNNEL-V2/main/backup/menu-backup.sh"
 wget -q -O /usr/bin/trial "https://raw.githubusercontent.com/Paper890/PAPER-TUNNEL-V2/main/ssh/trial.sh"
 wget -q -O /usr/bin/usernew "https://raw.githubusercontent.com/Paper890/PAPER-TUNNEL-V2/main/ssh/usernew.sh"
-wget -q -O /usr/bin/usernew "https://raw.githubusercontent.com/Paper890/PAPER-TUNNEL-V2/main/menu/menu-lock.sh"
+wget -q -O /usr/bin/menu-lock "https://raw.githubusercontent.com/Paper890/PAPER-TUNNEL-V2/main/menu/menu-lock.sh"
 chmod +x /usr/bin/usernew
 chmod +x /usr/bin/auto-reboot
 chmod +x /usr/bin/restart
@@ -150,7 +150,7 @@ clear
 echo -e ""
 echo -e "\e[0;32mDownloaded successfully!\e[0m"
 echo ""
-ver=$( curl https://raw.githubusercontent.com/${GitUser}/v4/main/version )
+ver=$( curl https://raw.githubusercontent.com/${GitUser}/PAPER-TUNNEL-V2/main/version )
 sleep 1
 echo -e "\e[0;32mPatching New Update, Please Wait...\e[0m"
 echo ""

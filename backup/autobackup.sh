@@ -2,15 +2,26 @@
 # SL
 # ==========================================
 # // Export Color & Information
-export RED='\033[0;31m'
-export GREEN='\033[0;32m'
-export YELLOW='\033[0;33m'
-export BLUE='\033[0;34m'
-export PURPLE='\033[0;35m'
-export CYAN='\033[0;36m'
-export LIGHT='\033[0;37m'
-export ORANGE='\033[0;33m'
-export NC='\033[0m'
+BIBlack='\033[1;90m'      # Black
+BIRed='\033[1;91m'        # Red
+BIGreen='\033[1;92m'      # Green
+BIYellow='\033[1;93m'     # Yellow
+BIBlue='\033[1;94m'       # Blue
+BIPurple='\033[1;95m'     # Purple
+BICyan='\033[1;96m'       # Cyan
+BIWhite='\033[1;97m'      # White
+UWhite='\033[4;37m'       # White
+On_IPurple='\033[0;105m'  #
+On_IRed='\033[0;101m'
+IBlack='\033[0;90m'       # Black
+IRed='\033[0;91m'         # Red
+IGreen='\033[0;92m'       # Green
+IYellow='\033[0;93m'      # Yellow
+IBlue='\033[0;94m'        # Blue
+IPurple='\033[0;95m'      # Purple
+ICyan='\033[0;96m'        # Cyan
+IWhite='\033[0;97m'       # White
+NC='\e[0m'
 # ==========================================
 # Getting
 clear
@@ -101,16 +112,18 @@ Tanggal : $date
 " | mail -s "Percobaan Pengiriman Email" $email
 }
 clear
-echo -e "${YELLOW}   ╔ ——————————————————————————————————— ╗${NC}"
-echo -e "${ORANGE}           MENU AUTO-BACKUP${NC}"
-echo -e "${YELLOW}   ╚ ——————————————————————————————————— ╝${NC}"
-echo -e "${GREEN}    1. Start Autobackup"
-echo -e "${GREEN}    2. Stop Autobackup"
-echo -e "${GREEN}    3. Ganti Email Penerima"
-echo -e "${GREEN}    4. Ganti Email Pengirim"
-echo -e "${GREEN}    5. Test kirim Email"
-echo -e "${YELLOW}   ╚ ——————————————————————————————————— ╝${NC}"
-read -rp "Please Enter The Correct Number : " -e num
+echo -e "${BIYellow}   ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓${NC}"
+echo -e "${BIYellow}   ┃       ${GREEN}MENU AUTO-BACKUP${NC}"
+echo -e "${BIYellow}   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
+echo -e "${BIYellow}   ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
+echo -e "${BIYellow}   ┃${BIGreen} 1. Start Autobackup${NC}"
+echo -e "${BIYellow}   ┃${BIGreen} 2. Stop Autobackup${NC}"
+echo -e "${BIYellow}   ┃${BIGreen} 3. Ganti Email Penerima${NC}"
+echo -e "${BIYellow}   ┃${BIGreen} 4. Ganti Email Pengirim${NC}"
+echo -e "${BIYellow}   ┃${BIGreen} 5. Test kirim Email${NC}"
+echo -e "${BIYellow}   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
+echo -e ""
+read -rp "Select number [1-5] : " -e num 
 case $num in
 1)
 start
