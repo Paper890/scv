@@ -100,22 +100,22 @@ fi
 tls="$(cat ~/log-install.txt | grep -w "Vmess TLS" | cut -d: -f2|sed 's/ //g')"
 none="$(cat ~/log-install.txt | grep -w "Vmess None TLS" | cut -d: -f2|sed 's/ //g')"
 until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${CLIENT_EXISTS} == '0' ]]; do
-echo -e "\033[0;34m✦───────────────────✦\033[0m"
+echo -e "\033[0;34mC━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\\E[0;41;36mCreate Xray/Vmess Account             \E[0m"
-echo -e "\033[0;34m✦───────────────────✦\033[0m"
+echo -e "\033[0;34mC━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 
 		read -rp "User: " -e user
 		CLIENT_EXISTS=$(grep -w $user /etc/xray/config.json | wc -l)
 
 		if [[ ${CLIENT_EXISTS} == '1' ]]; then
 clear
-            echo -e "\033[0;34m✦───────────────────✦\033[0m"
+            echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
             echo -e "\\E[0;41;36mCreate Xray/Vmess Account             \E[0m"
-            echo -e "\033[0;34m✦───────────────────✦\033[0m"
+            echo -e "\033[0;34mC━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 			echo ""
 			echo "A client with the specified name was already created, please choose another name."
 			echo ""
-			echo -e "${BIBlue}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+			echo -e "${BIBlue}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 			read -n 1 -s -r -p "Press any key to back on menu"
 menu
 		fi
@@ -188,9 +188,9 @@ vmesslink3="vmess://$(echo $grpc | base64 -w 0)"
 systemctl restart xray > /dev/null 2>&1
 service cron restart > /dev/null 2>&1
 clear
-echo -e "${BIBlue}✦───────────────────✦${NC}"
+echo -e "${BIBlue}C━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "${BIBlue} XRAY/VMESS${NC}"
-echo -e "${BIBlue}✦───────────────────✦${NC}"
+echo -e "${BIBlue}C━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "Remarks       : ${user}"
 echo -e "User Quota    : ${Quota} GB"
 echo -e "Expired On    : $exp" 
@@ -207,16 +207,16 @@ echo -e "Path          : /worryfree"
 echo -e "Path          : http://bug/worryfree" 
 echo -e "Path          : /kuota-habis" 
 echo -e "ServiceName   : vmess-grpc" 
-echo -e "${BIBlue}✦───────────────────✦${NC}" 
+echo -e "${BIBlue}C━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}" 
 echo -e "Link TLS : "
 echo -e "${vmesslink1}" 
-echo -e "${BIBlue}✦───────────────────✦${NC} "
+echo -e "${BIBlue}C━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC} "
 echo -e "Link none TLS : "
 echo -e "${vmesslink2}" 
-echo -e "${BIBlue}✦───────────────────✦${NC} "
+echo -e "${BIBlue}C━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC} "
 echo -e "Link GRPC : "
 echo -e "${vmesslink3}"
-echo -e "${BIBlue}✦───────────────────✦${NC}" 
+echo -e "${BIBlue}C━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}" 
 echo -e "${BICyan} Premium VPN Auto Script Service${NC}" 
 echo "" | tee -a /etc/log-create-user.log
 rm /etc/xray/$user-tls.json > /dev/null 2>&1

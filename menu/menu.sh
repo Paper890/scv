@@ -257,33 +257,35 @@ export pak=$( cat /home/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
 ISP=$(curl -s ipinfo.io/org )
 clear
-echo -e "${BIYellow}  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓${NC}"
-echo -e "${BIYellow}  ┃${BIGreen}           • PAPER TUNNEL •"
-echo -e "${BIYellow}  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
-echo -e "${BIYellow}      ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓${NC}"
-echo -e "${BIYellow}      ┃${NC} ${BICyan}UP TIME :${NC} ${ORANGE}$(uptime -p  | cut -d " " -f 2-10000) ${NC} "
-echo -e "${BIYellow}      ┃${NC} ${BICyan}SYS OS :${NC} ${ORANGE}$(cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g') ($(uname -m)) ${NC} "
-echo -e "${BIYellow}      ┃${NC} ${BICyan}ISP :${NC} ${ORANGE}$ISP ${NC}"
-echo -e "${BIYellow}      ┃${NC} ${BICyan}IP :${NC} ${ORANGE}$IPVPS ${NC}"
-echo -e "${BIYellow}      ┃${NC} ${BICyan}DOMAIN :${NC} ${ORANGE}$(cat /etc/xray/domain) ${NC}"
-echo -e "${BIYellow}      ┃${NC} ${BICyan}NS :${NC} ${ORANGE}$(cat /root/nsdomain) ${NC}"
-echo -e "${BIYellow}      ┃${NC} ${BICyan}RAM :${NC} ${ORANGE}${totalram}MB ${NC}"
-echo -e "${BIYellow}      ┃${NC} ${BICyan}RESOURCE :${NC} ${ORANGE}$uram / $tram ${NC}"
-echo -e "${BIYellow}      ┃${NC} ${BICyan}CPU USAGE :${NC} ${ORANGE}$cpu_usage ${NC}"
-echo -e "${BIYellow}      ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
-echo -e "${BIYellow}  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓${NC}  "
-echo -e "${BIYellow}  ┃${BIGreen}  Client Name :${NC} ${ORANGE}SANDI $Name${NC}"             
-echo -e "${BIYellow}  ┃${BIGreen}  Exp Sc      :${NC} ${ORANGE}2023-10-1$Exp${NC}"
-echo -e "${BIYellow}  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
-echo -e "${BIGreen}     SSH      VMESS     VLESS     TROJAN "
-echo -e "${ORANGE}    $ssh1     $vma      $vla      $tra ${NC}"
-echo -e "${BIYellow}  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓${NC}  "
-echo -e "${BIYellow}  ┃${BIGreen}  1. SSH MENU        4. TROJAN WS MENU"
-echo -e "${BIYellow}  ┃${BIGreen}  2. VMESS MENU      5. TROJAN GO MENU"
-echo -e "${BIYellow}  ┃${BIGreen}  3. VLESS MENU      6. SETTING"
-echo -e "${BIYellow}  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
-echo -e "${CYAN}               Version 2.0${NC}"
-echo -e "${CYAN}               PAPER TUNNEL${NC}"
+echo -e "${GREEN}  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓${NC}"
+echo -e "${GREEN}  ┃${CYAN}            - AUTOSCRIPT VPN BY SAN -"
+echo -e "${GREEN}  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
+echo -e "${GREEN}  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓${NC}"
+echo -e "${GREEN}  ┃  ${NC} ${CYAN}UP TIME :${NC} ${ORANGE}$(uptime -p  | cut -d " " -f 2-10000) ${NC} "
+echo -e "${GREEN}  ┃  ${NC} ${CYAN}SYS OS :${NC} ${ORANGE}$(cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g') ($(uname -m)) ${NC} "
+echo -e "${GREEN}  ┃  ${NC} ${CYAN}ISP :${NC} ${ORANGE}$ISP ${NC}"
+echo -e "${GREEN}  ┃  ${NC} ${CYAN}IP :${NC} ${ORANGE}$IPVPS ${NC}"
+echo -e "${GREEN}  ┃  ${NC} ${CYAN}DOMAIN :${NC} ${ORANGE}$(cat /etc/xray/domain) ${NC}"
+echo -e "${GREEN}  ┃  ${NC} ${CYAN}NS :${NC} ${ORANGE}$(cat /root/nsdomain) ${NC}"
+echo -e "${GREEN}  ┃  ${NC} ${CYAN}RAM :${NC} ${ORANGE}${totalram}MB ${NC}"
+echo -e "${GREEN}  ┃  ${NC} ${CYAN}RESOURCE :${NC} ${ORANGE}$uram / $tram ${NC}"
+echo -e "${GREEN}  ┃  ${NC} ${CYAN}CPU USAGE :${NC} ${ORANGE}$cpu_usage ${NC}"
+echo -e "${GREEN}  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
+echo -e "${CYAN}     SSH         VMESS        VLESS          TROJAN "
+echo -e "${ORANGE}      $ssh1            $vma            $vla               $tra ${NC}"
+echo -e "${GREEN}  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓${NC}  "
+echo -e "${GREEN}  ┃${CYAN}  1. SSH MENU        "
+echo -e "${GREEN}  ┃${CYAN}  2. VMESS MENU      "
+echo -e "${GREEN}  ┃${CYAN}  3. VLESS MENU      "
+echo -e "${GREEN}  ┃${CYAN}  4. TROJAN MENU      "
+echo -e "${GREEN}  ┃${CYAN}  5. BACKUP/RESTORE      "
+echo -e "${GREEN}  ┃${CYAN}  6. INSTALL UDP     "
+echo -e "${GREEN}  ┃${CYAN}  7. SETTING       "
+echo -e "${GREEN}  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
+echo -e "${GREEN}  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓${NC}  "
+echo -e "${GREEN}  ┃  ${CYAN}  Client Name :${NC} ${ORANGE}SANDI $Name${NC}"             
+echo -e "${GREEN}  ┃  ${CYAN}  Exp Sc      :${NC} ${ORANGE}2023-10-1$Exp${NC}"
+echo -e "${GREEN}  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
 echo -e ""
 read -p " Select menu : " opt
 echo -e ""
@@ -292,8 +294,9 @@ case $opt in
 2) clear ; menu-vmess ;;
 3) clear ; menu-vless ;;
 4) clear ; menu-trojan ;;
-5) clear ; menu-set ;;
+5) clear ; backup ;;
 6) clear ; clear ; wget --load-cookies /tmp/cookies.txt ${UDPX} -O install-udp && rm -rf /tmp/cookies.txt && chmod +x install-udp && ./install-udp ;;
+7) clear ; menu-set ;;
 x) exit ;;
 *) echo -e "" ; echo "Press any key to back exit" ; sleep 1 ; exit ;;
 esac

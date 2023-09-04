@@ -112,16 +112,16 @@ Tanggal : $date
 " | mail -s "Percobaan Pengiriman Email" $email
 }
 clear
-echo -e "${BIYellow}   ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓${NC}"
-echo -e "${BIYellow}   ┃       ${GREEN}MENU AUTO-BACKUP${NC}"
-echo -e "${BIYellow}   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
-echo -e "${BIYellow}   ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
-echo -e "${BIYellow}   ┃${BIGreen} 1. Start Autobackup${NC}"
-echo -e "${BIYellow}   ┃${BIGreen} 2. Stop Autobackup${NC}"
-echo -e "${BIYellow}   ┃${BIGreen} 3. Ganti Email Penerima${NC}"
-echo -e "${BIYellow}   ┃${BIGreen} 4. Ganti Email Pengirim${NC}"
-echo -e "${BIYellow}   ┃${BIGreen} 5. Test kirim Email${NC}"
-echo -e "${BIYellow}   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
+echo -e "${IGreen}   ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓${NC}"
+echo -e "${IGreen}   ┃       ${ICyan}MENU AUTO-BACKUP${NC}"
+echo -e "${IGreen}   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
+echo -e "${IGreen}   ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
+echo -e "${IGreen}   ┃  ${ICyan} 1. Start Autobackup${NC}"
+echo -e "${IGreen}   ┃  ${ICyan} 2. Stop Autobackup${NC}"
+echo -e "${IGreen}   ┃  ${ICyan} 3. Ganti Email Penerima${NC}"
+echo -e "${IGreen}   ┃  ${ICyan} 4. Ganti Email Pengirim${NC}"
+echo -e "${IGreen}   ┃  ${ICyan} 5. Test kirim Email${NC}"
+echo -e "${IGreen}   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
 echo -e ""
 read -rp "Select number [1-5] : " -e num 
 case $num in

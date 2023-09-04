@@ -24,13 +24,13 @@ IWhite='\033[0;97m'       # White
 NC='\e[0m'
 
 clear 
-echo -e "${BIYellow}   ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓${NC}"
+echo -e "${BIYellow}   ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓${NC}"
 echo -e "${BIYellow}   ┃       ${BIYellow}MENU DOMAIN${NC}"
-echo -e "${BIYellow}   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
-echo -e "${BIYellow}   ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
-echo -e "${BIYellow}   ┃${IGreen} 1. Change Domain${NC}"
-echo -e "${BIYellow}   ┃${IGreen} 2. Renew Cert Domain${NC}"
-echo -e "${BIYellow}   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
+echo -e "${BIYellow}   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
+echo -e "${BIYellow}   ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
+echo -e "${BIYellow}   ┃  ${IGreen} 1. Change Domain${NC}"
+echo -e "${BIYellow}   ┃  ${IGreen} 2. Renew Cert Domain${NC}"
+echo -e "${BIYellow}   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
 echo -e ""
 read -p " Select menu : " opt
 echo -e ""

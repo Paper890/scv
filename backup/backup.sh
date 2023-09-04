@@ -46,21 +46,20 @@ id=(`echo $url | grep '^https' | cut -d'=' -f2`)
 link="https://drive.google.com/u/4/uc?id=${id}&export=download"
 echo -e "
 Detail Backup 
-╔ ——————————————————————————————————— ╗
-IP VPS        : $IP
-Link Backup   : $link
-Tanggal       : $date
-╚ ——————————————————————————————————— ╝
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Link Backup   : $link
+  Tanggal       : $date
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 " | mail -s "Backup Data" $email
 rm -rf /root/backup
 rm -r /root/$IP-$date.zip
 clear
 echo -e "
 Succesfully Backup 
-╔ ——————————————————————————————————— ╗
-IP VPS        : $IP
-Link Backup   : $link
-Tanggal       : $date
-╚ ——————————————————————————————————— ╝
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  IP VPS        : $IP
+  Link Backup   : $link
+  Tanggal       : $date
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 "
 echo "Silahkan cek Kotak Masuk $email"

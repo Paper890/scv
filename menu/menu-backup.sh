@@ -22,15 +22,16 @@ IWhite='\033[0;97m'       # White
 NC='\e[0m'
 
 
-echo -e "${BIYellow}   ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓${NC}"
-echo -e "${BIYellow}   ┃     MENU BACKUP${NC}"
-echo -e "${BIYellow}   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
-echo -e "${BIYellow}   ┃${BIGreen}1  Backup"
-echo -e "${BIYellow}   ┃${BIGreen}2. Restore"
-echo -e "${BIYellow}   ┃${BIGreen}3. strt"
-echo -e "${BIYellow}   ┃${BIGreen}4. limit speed"
-echo -e "${BIYellow}   ┃${BIGreen}5. autobackup"
-echo -e "${BIYellow}   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
+echo -e "${IGreen}   ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓${NC}"
+echo -e "${IGreen}   ┃     ${ICyan}MENU BACKUP${NC}"
+echo -e "${IGreen}   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
+echo -e "${IGreen}   ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓${NC}"
+echo -e "${IGreen}   ┃  ${ICyan}1  Backup"
+echo -e "${IGreen}   ┃  ${ICyan}2. Restore"
+echo -e "${IGreen}   ┃  ${ICyan}3. strt"
+echo -e "${IGreen}   ┃  ${ICyan}4. limit speed"
+echo -e "${IGreen}   ┃  ${ICyan}5. autobackup"
+echo -e "${IGreen}   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
 echo
 echo -e "${BIYellow}"
 read -p    "Pilih Nomor └╼>>>" bro

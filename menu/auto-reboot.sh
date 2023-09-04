@@ -33,19 +33,20 @@ echo '/sbin/shutdown -r now' >> /usr/local/bin/reboot_otomatis
 chmod +x /usr/local/bin/reboot_otomatis
 fi
 clear
-echo -e "${BIYellow} ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓${NC}"
-echo -e "${BIYellow} ┃       ${BIYellow}MENU AUTO-REBOOT${NC}"
-echo -e "${BIYellow} ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
-echo -e "${BIYellow} ┃${IGreen} 1. Set Auto-Reboot Setiap 1 Jam${NC}"
-echo -e "${BIYellow} ┃${IGreen} 2. Set Auto-Reboot Setiap 6 Jam${NC}"
-echo -e "${BIYellow} ┃${IGreen} 3. Set Auto-Reboot Setiap 12 Jam${NC}"
-echo -e "${BIYellow} ┃${IGreen} 4. Set Auto-Reboot Setiap 1 Hari${NC}"
-echo -e "${BIYellow} ┃${IGreen} 5. Set Auto-Reboot Setiap 1 Minggu${NC}"
-echo -e "${BIYellow} ┃${IGreen} 6. Set Auto-Reboot Setiap 1 Bulan${NC}"
-echo -e "${BIYellow} ┃${IGreen} 7. Matikan Auto-Reboot${NC}"
-echo -e "${BIYellow} ┃${IGreen} 8. View reboot log${NC}"
-echo -e "${BIYellow} ┃${IGreen} 9. Remove reboot log${NC}"
-echo -e "${BIYellow} ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
+echo -e "${IGreen} ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓${NC}"
+echo -e "${IGreen} ┃       ${ICyan}MENU AUTO-REBOOT${NC}"
+echo -e "${IGreen} ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
+echo -e "${IGreen} ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓${NC}"
+echo -e "${IGreen} ┃  ${ICyan} 1. Set Auto-Reboot Setiap 1 Jam${NC}"
+echo -e "${IGreen} ┃  ${ICyan} 2. Set Auto-Reboot Setiap 6 Jam${NC}"
+echo -e "${IGreen} ┃  ${ICyan} 3. Set Auto-Reboot Setiap 12 Jam${NC}"
+echo -e "${IGreen} ┃  ${ICyan} 4. Set Auto-Reboot Setiap 1 Hari${NC}"
+echo -e "${IGreen} ┃  ${ICyan} 5. Set Auto-Reboot Setiap 1 Minggu${NC}"
+echo -e "${IGreen} ┃  ${ICyan} 6. Set Auto-Reboot Setiap 1 Bulan${NC}"
+echo -e "${IGreen} ┃  ${ICyan} 7. Matikan Auto-Reboot${NC}"
+echo -e "${IGreen} ┃  ${ICyan} 8. View reboot log${NC}"
+echo -e "${IGreen} ┃  ${ICyan} 9. Remove reboot log${NC}"
+echo -e "${IGreen} ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
 echo -e ""
 read -p " Select menu : " x
 if test $x -eq 1; then
