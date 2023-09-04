@@ -90,7 +90,7 @@ red "Permission Denied!"
 exit 0
 fi
 clear
-source /var/lib/scrz-prem/ipvps.conf
+source /var/lib/SIJA/ipvps.conf
 if [[ "$IP" = "" ]]; then
 domain=$(cat /etc/xray/domain)
 else
