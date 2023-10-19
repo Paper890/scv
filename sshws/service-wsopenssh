@@ -1,6 +1,6 @@
 [Unit]
-Description=Websocket-OpenSSH
-Documentation=https://google.com
+Description=Websocket-OpenSSH By TheKill
+Documentation=https://thekillstore.me
 After=network.target nss-lookup.target
 
 [Service]
